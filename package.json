@@ -1,7 +1,7 @@
 {
   "name": "mmm-chaoticbilliards",
   "version": "1.0.0",
-  "description": "MagicMirror² module: Chaotic billiards: balls leaving one point 10⁻⁶ rad apart stay together in an ellipse and part in Bunimovich's stadium.",
+  "description": "MagicMirror² module: chaotic billiards, three balls leaving one point 10⁻⁶ rad apart that stay together on an elliptical table and part on Bunimovich's stadium, drawn as a long exposure for a Raspberry Pi without a GPU.",
   "main": "MMM-ChaoticBilliards.js",
   "scripts": {
     "test": "node --test"
@@ -12,6 +12,7 @@
     "chaos theory",
     "billiards",
     "Bunimovich stadium",
+    "dynamical systems",
     "physics",
     "animation"
   ],
