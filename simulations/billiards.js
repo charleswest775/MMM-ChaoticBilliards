@@ -159,7 +159,7 @@
 		}
 
 		readout () {
-			const sci = (root.ChaosCommon || require("./common.js")).sci;
+			const sci = (root.BilliardsCommon || require("./common.js")).sci;
 			const e = this.ellipse, s = this.stadium;
 			return `ellipse: ${e.balls[0].bounces} bounces, the balls ${sci(e.spread())} apart\n` +
 				`stadium: ${s.balls[0].bounces} bounces, the balls ${sci(s.spread())} apart`;
@@ -171,7 +171,7 @@
 		subtitle: "above an elliptical table, below Bunimovich's stadium: three balls in each, leaving the same point 10⁻⁶ rad apart",
 		equations: [
 			"angle of incidence = angle of reflection; &nbsp;no friction",
-			"<span class=\"chaos-note\">In the ellipse every path keeps touching the same confocal ellipse or hyperbola, which it never crosses, so the balls stay together. In the stadium the gap doubles every bounce or two, and each ball goes everywhere: Leonid Bunimovich proved in the 1970s that a table needs no inward-curving wall to be chaotic, the straight sides and round ends are enough.</span>"
+			"<span class=\"billiards-note\">In the ellipse every path keeps touching the same confocal ellipse or hyperbola, which it never crosses, so the balls stay together. In the stadium the gap doubles every bounce or two, and each ball goes everywhere: Leonid Bunimovich proved in the 1970s that a table needs no inward-curving wall to be chaotic, the straight sides and round ends are enough.</span>"
 		]
 	};
 	Billiards.hitEllipse = hitEllipse;
@@ -179,7 +179,7 @@
 	Billiards.Table = Table;
 	Billiards.SIZE = { A, B, L, R };
 
-	root.ChaosSimulations = root.ChaosSimulations || {};
-	root.ChaosSimulations.billiards = Billiards;
+	root.BilliardsSimulations = root.BilliardsSimulations || {};
+	root.BilliardsSimulations.billiards = Billiards;
 	if (typeof module !== "undefined") module.exports = { Billiards };
 })(typeof window !== "undefined" ? window : globalThis);
